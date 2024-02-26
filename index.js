@@ -55,7 +55,7 @@ const r = new Discord.RichPresence()
   function getCurrentDate() {
     const a = new Date(Date.now());
     const c = { timeZone: "Asia/Bangkok", day: "2-digit", month: "2-digit", year: "numeric" };
-    const formattedDate = a.toLocaleDateString("en-US", c);
+    const formattedDate = a.toLocaleDateString("th-TH", c);
     const [month, day, year] = formattedDate.split('/');
     return `${day}/${month}/${year}`;
 }
