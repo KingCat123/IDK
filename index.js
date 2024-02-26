@@ -11,6 +11,7 @@ const largeImages = [
     'https://media.discordapp.net/attachments/1199386824582373516/1211343738098688030/waifu-anime.gif?ex=65eddac4&is=65db65c4&hm=3c5f03263eaafb8567c0163708ed938097995a77ab220c188685341ab99b0fbf&=',
     'https://media.discordapp.net/attachments/1199386824582373516/1211343738656399392/hikikomari-terakomari.gif?ex=65eddac4&is=65db65c4&hm=54a4cb5a3bd8a1cdba46916a0f0c44251bdc685173a7cd90b338f6a444531bb6&=',
     'https://media.discordapp.net/attachments/1199386824582373516/1211343739323158638/hikikomari-hikikomari-kyuuketsuki.gif?ex=65eddac5&is=65db65c5&hm=af0f79d45c17475abf206a9b2c947239617364f2557abbf6a3433ee55714da8e&=',
+    'https://cdn.discordapp.com/attachments/1199386824582373516/1211690815592726638/F4tviVKWYAAWVDT.jpg?ex=65ef1e02&is=65dca902&hm=11810f6fcd089278f9e12ad59f27a1b87dabda5021029933e7f25dcb6e974f84&',
       // ใส่เพิ่มได้ถ้าเองต้องการ รูปใหญ่
   ];
 
@@ -55,7 +56,7 @@ const r = new Discord.RichPresence()
   function getCurrentDate() {
     const a = new Date(Date.now());
     const c = { timeZone: "Asia/Bangkok", day: "2-digit", month: "2-digit", year: "numeric" };
-    const formattedDate = a.toLocaleDateString("th-TH", c);
+    const formattedDate = a.toLocaleDateString("en-US", c);
     const [month, day, year] = formattedDate.split('/');
     return `${day}/${month}/${year}`;
 }
