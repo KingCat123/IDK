@@ -40,7 +40,7 @@ const r = new Discord.RichPresence()
           .setURL('https://youtu.be/LzAlv-wnQJY?si=NI8ZtPikq9Hb7CR_')
           .setState('すごく疲れた | 死にたい') // คำที่ขึ้น
           .setName('𝙵𝙰𝙺𝙴') // คำที่ขึ้น
-          .setDetails(` 〈⏰${currentTime}〉 «» 〈👻 Itz${client.user.username}〉 `) // เวลาเเละชื่อของความเท่
+          .setDetails(` 〈⏳${currentTime}〉 «» 〈💤 Itz${client.user.username}〉 `) // เวลาเเละชื่อของความเท่
           .setStartTimestamp(startedAt)
           .setAssetsLargeText(`〈${currentDate}〉|〈🛸 ${Math.round(client.ws.ping)} m/s〉`) // status
           .setAssetsLargeImage(largeImages[currentLargeImageIndex]) // รูปใหญ่ไปใส่ข้างบน
