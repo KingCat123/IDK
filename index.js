@@ -46,7 +46,7 @@ const r = new Discord.RichPresence()
           .setAssetsLargeImage(largeImages[currentLargeImageIndex]) // รูปใหญ่ไปใส่ข้างบน
           .setAssetsSmallImage('https://cdn.discordapp.com/attachments/1061395766586921092/1211763226577207416/Art_Icon.jpg?ex=65ef6172&is=65dcec72&hm=16829d77eeee2784c3c834ecfe0084e0d0909cea2b6a99d881c43683d451d392&') // รูปเล็ก
           .setAssetsSmallText('✧ Busy')
-          .addButton('..?❤️', 'https://youtu.be/DG2QqcHwNdE?si=gmhUjuYRhkdObNhz')
+          .addButton('Free access 200+ ❤️', 'https://discord.com/invite/aqt6thEVV7')
           .addButton('Itz4levy', 'https://guns.lol/4levy')
 
         client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
