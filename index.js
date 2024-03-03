@@ -8,9 +8,9 @@ const app = express();
 const port = 8000;
 
 const largeImages = [
-    'https://media.discordapp.net/attachments/1199386824582373516/1211343738098688030/waifu-anime.gif?ex=65eddac4&is=65db65c4&hm=3c5f03263eaafb8567c0163708ed938097995a77ab220c188685341ab99b0fbf&=%27%2C&',
-    'https://media.discordapp.net/attachments/1199386824582373516/1212036332843569182/ezgif-1-029e122a42.gif?ex=65f05fcc&is=65ddeacc&hm=dbbfc9ccf200fdade58f2e0b8c407ca6e4735c7e72ed0ddbe1be531597a5a19c&=',
-    'https://media.discordapp.net/attachments/1199386824582373516/1212036353269956678/ezgif-1-e85f55f0a6.gif?ex=65f05fd1&is=65ddead1&hm=2749a3c7e6be666eabc5ab4e418929210c756573ae8c0f6108b471a97ef2ad11&=',
+    'https://media.discordapp.net/attachments/1160072155476795392/1213708850939559999/Blue_Moment.PNG?ex=65f67573&is=65e40073&hm=34b99529ebc16f73f85b17252fa85a37e4c4654144665462cdbdc13bf95efbf0&=&format=webp&quality=lossless&width=540&height=437',
+    'https://media.discordapp.net/attachments/1160072155476795392/1213708850939559999/Blue_Moment.PNG?ex=65f67573&is=65e40073&hm=34b99529ebc16f73f85b17252fa85a37e4c4654144665462cdbdc13bf95efbf0&=&format=webp&quality=lossless&width=540&height=437',
+    'https://media.discordapp.net/attachments/1160072155476795392/1213708850939559999/Blue_Moment.PNG?ex=65f67573&is=65e40073&hm=34b99529ebc16f73f85b17252fa85a37e4c4654144665462cdbdc13bf95efbf0&=&format=webp&quality=lossless&width=540&height=437',
       // ใส่เพิ่มได้ถ้าเองต้องการ รูปใหญ่
   ];
 
@@ -33,16 +33,16 @@ const r = new Discord.RichPresence()
           .setApplicationId('1155496899697180762')
           .setType('WATCHING')
           .setURL('https://youtu.be/LzAlv-wnQJY?si=NI8ZtPikq9Hb7CR_')
-          .setState('すごく疲れた | 死にたい') // คำที่ขึ้น
-          .setName('𝙵𝙰𝙺𝙴') // คำที่ขึ้น
-          .setDetails(` 〈⏳${currentTime}〉 «» 〈💤 Itz${client.user.username}〉 `) // เวลาเเละชื่อของความเท่
+          .setState('Normal Cat Moment') // คำที่ขึ้น
+          .setName('Play Game For 24/7') // คำที่ขึ้น
+          .setDetails(` 〈⏳${currentTime}〉 «» 〈🔥 im${client.user.username}〉 `) // เวลาเเละชื่อของความเท่
           .setStartTimestamp(startedAt)
           .setAssetsLargeText(`〈${currentDate}〉|〈🛸 ${Math.round(client.ws.ping)} m/s〉`) // status
           .setAssetsLargeImage(largeImages[currentLargeImageIndex]) // รูปใหญ่ไปใส่ข้างบน
-          .setAssetsSmallImage('https://cdn.discordapp.com/attachments/1061395766586921092/1211763226577207416/Art_Icon.jpg?ex=65ef6172&is=65dcec72&hm=16829d77eeee2784c3c834ecfe0084e0d0909cea2b6a99d881c43683d451d392&') // รูปเล็ก
-          .setAssetsSmallText('✧ Busy')
-          .addButton('Free access 200+ ❤️', 'https://discord.com/invite/aqt6thEVV7')
-          .addButton('Itz4levy', 'https://guns.lol/4levy')
+          .setAssetsSmallImage('https://media.discordapp.net/attachments/1160072155476795392/1213711209795162122/Cute_Cat.jpg?ex=65f677a6&is=65e402a6&hm=e95353a5700cc86c403b040a29db40cbd1b3e0ab70fdf3fd67766ff5fa27f853&=&format=webp&width=592&height=591') // รูปเล็ก
+          .setAssetsSmallText('Cat Moment')
+          .addButton('Join My Discord Server !', 'https://discord.gg/VUsFzfMytN')
+          .addButton('Sub To My Channel !', 'https://www.youtube.com/channel/UCFUvOsGvirLNNBnf0F6B8FA')
 
         client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
         client.user.setActivity(r);
